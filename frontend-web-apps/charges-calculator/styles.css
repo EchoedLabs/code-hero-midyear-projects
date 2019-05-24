@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+#home-section {
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+.title-caption {
+    margin-bottom: 30px;
+}
+
+.restaurant-charges-btn {
+    margin-right: 20px;
+}
+
+.calculator-section {
+    padding-top: 5%;
+    min-height: 100vh;
+}
+
+.calculate-btn { 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.restaurant-checbox {
+    display: inline;
+}
+
+.gstLabel {
+    margin-right: 10px;
+}
+
+
+.checkbox-red[type="checkbox"].filled-in:checked + span:not(.lever):after
+{
+    border: 2px solid #b71c1c;
+    background-color: #b71c1c;
+}
+
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+    border: 2px solid #b71c1c;
+    background-color: #b71c1c;
+}

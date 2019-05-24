@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">SG Charges</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#restaurant-section">Restaurant Bill</a></li>
+            <li><a href="#postage-section">Postage Fee</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home-section" class="center-align red lighten-5 ">
+        <h1 class="animated pulse">SG Charges</h1>
+        <p class="flow-text title-caption animated pulse">This is a simple web app that helps you to calculate the amount payable for your bills in SG</p>
+        <a class="waves-effect waves-light btn-large restaurant-charges-btn red darken-4" href="#restaurant-section">Restaurant Charges</a>
+        <a class="waves-effect waves-light btn-large red darken-4" href="#postage-section">Postage Charges</a>
+    </div>
+
+    <div id="restaurant-section" class="calculator-section center-align container">
+        <h1>Restaurant Charges</h1>
+        <p class="flow-text title-caption">Find out the total cost of your order after GST and/or service charge.</p>
+        <div class="input-field col s6">
+            <input id="restaurant-input" type="number" class="validate">
+            <label for="restaurant-input">Menu Price</label>
+            <span class="helper-text">Enter the toal menu price of your order</span>
+        </div>
+
+        <div class="restaurant-checbox">
+          <label class="gstLabel">
+            <input type="checkbox" class="filled-in checkbox-red" checked="checked" id="gst-checkbox"/>
+            <span>GST</span>
+          </label>
+          <label>
+            <input type="checkbox" class="filled-in checkbox-red" checked="checked"  id="service-checkbox"/>
+            <span>Service Charge</span>
+          </label>
+        </div>
+
+        <br/>
+
+        <button class="btn waves-effect waves-light btn-large calculate-btn red darken-4" type="button" onclick="calculateOrderPrice()">Calculate
+            <i class="material-icons right">send</i>
+        </button>
+
+        <div class="row center-align">
+            <div class="card-panel red lighten-5">
+                <span id="restaurant-output">Your results will display here after you click the 'Calculate' button.</span>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div id="postage-section" class="calculator-section center-align container">
+        <h1>Postage Charges</h1>
+        <p class="flow-text title-caption">Find out the local postage charges based on the weight of your parcel.</p>
+        <div class="input-field col s6">
+            <input id="postage-input" type="number" class="validate">
+            <label for="postage-input">Parcel Weight (in grams)</label>
+            <span class="helper-text">Enter the weight (in grams) of the parcel you wish to post</span>
+        </div>
+
+        <div class="left-align">
+          <div class="postage-rate-radio">
+              <label>
+                  <input name="postage-rate" type="radio" value="sr" id="standard-regular-radio" checked class="radio-red"/>
+                  <span>Standard Regular: C5, C6 & DL size envelope</span>
+              </label>
+          </div>
+          <div  class="postage-rate-radio">
+              <label>
+                  <input name="postage-rate" type="radio"  value="sl" id="standard-large-radio" class="radio-red"/>
+                  <span>Standard Large: Up to C4 size envelope</span>
+              </label>
+          </div>
+          <div  class="postage-rate-radio">
+            <label>
+                <input name="postage-rate" type="radio"  value="ns" id="non-standard-radio" class="radio-red"/>
+                <span>Non-Standard</span>
+            </label>
+          </div>
+        </div>
+
+        <br />
+
+        <button class="btn waves-effect waves-light btn-large calculate-btn red darken-4" type="button" onclick="calculatePostageRate()">Calculate
+            <i class="material-icons right">send</i>
+        </button>
+
+        <div class="row center-align">
+            <div class="card-panel red lighten-5">
+                <span id="postage-output">Your results will display here after you click the 'Calculate' button.</span>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer red darken-4">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">About This App</h5>
+                  <p class="grey-text text-lighten-4">This is a coding project that was done during a Code Hero session to simulate calculations for additional charges in Singapore. This is NOT an official SG calculator app.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">My Other Apps</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Basic Calculator</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Grade Calculator</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Zakat Calculator</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Quiz App</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2019 Code Hero Project by Tengku Hafidz
+              <a class="grey-text text-lighten-4 right" href="#!">My Github</a>
+              </div>
+            </div>
+          </footer>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="main.js"></script>
+
+  </body>
+</html>

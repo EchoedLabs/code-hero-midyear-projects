@@ -1,0 +1,16 @@
+body {
+    position: relative;
+}
+
+#main-section {
+    height: 100vh;
+}
+
+.profile-image {
+    padding: 10px;
+}
+
+#projects-section {
+    min-height: 100vh;
+    background-color: beige;
+}

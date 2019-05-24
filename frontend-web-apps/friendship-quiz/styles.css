@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+#landing-section {
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+.question-section {
+    min-height: 100vh;
+    padding-top: 5%;
+    font-size: 3em;
+}
+
+.question-section span {
+    font-size: 2em !important;
+    color: #333;
+}
+
+.alt-section {
+    background-color: #eceff1;
+}
+
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color:#0d47a1;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, 
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #0d47a1;
+}
+
+.qn-btn {
+    margin-top: 40px;
+}
