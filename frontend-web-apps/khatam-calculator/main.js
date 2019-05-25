@@ -1,12 +1,18 @@
 function calculateDaysNeeded() {
     const pagesInputElement = document.getElementById('pages-input');
-    const pagesInputValue = pagesInputElement.value;
+    const pagesInputValue = parseInt(pagesInputElement.value);
     // default output message - not valid
+
 
     const daysNeeded = 604 / pagesInputValue;
     const daysNeededStr = daysNeeded.toFixed(0);
+    console.log('pagesInputValue', pagesInputValue)
+
+    console.log('daysNeeded', daysNeeded)
+
+
     let pagesMessage = 'If you read '+ pagesInputValue + ' page(s) a day, you will complete it in about ' + daysNeededStr + 'days. ';
-    if(!pagesInputValue|| !isNaN(pagesInputValue) || pagesInputValue < 1 || !daysNeeded || daysNeeded <=0) {
+    if(!pagesInputValue|| isNaN(pagesInputValue) || pagesInputValue < 1 || !daysNeeded || daysNeeded <=0) {
         pagesMessage = 'Please input a valid Number of pages. (There are only 604 pages)'
     } else if(daysNeeded > 365) {
         pagesMessage += 'It might seem long, but it will be worth it. Consistency is key!';
@@ -33,7 +39,7 @@ function calculatePagesNeeded() {
     let pagesMessage = 'If you hope to khatam the Quran by ' + daysInputValue + 'days, you need to read about ' + pagesNeededStr + ' page(s) per day.';
 
     //output message if valid 
-    if(!daysInputValue|| !isNaN(daysInputValue) || daysInputValue < 1 || !pagesNeeded) {
+    if(!daysInputValue|| isNaN(daysInputValue) || daysInputValue < 1 || !pagesNeeded) {
         pagesMessage = 'Please input a valid Number of Days. (There are only 604 pages)'
     }
 
