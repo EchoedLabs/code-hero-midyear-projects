@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+#home-section {
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+.title-caption {
+    margin-bottom: 30px;
+}
+
+.pages-btn {
+    margin-right: 20px;
+}
+
+.calculator-section {
+    padding-top: 5%;
+    min-height: 100vh;
+}
+
+.calculate-btn { 
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
