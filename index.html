@@ -19,28 +19,120 @@
         </div>
     </div>
 
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active disabled">
-            Landing Pages
-        </a>
-        <a href="landing-pages/first-website/index.html" target="_blank" class="list-group-item list-group-item-action">My First Website - HTML Project</a>
-        <a href="landing-pages/styled-website/index.html" target="_blank" class="list-group-item list-group-item-action">My Styled Webstie - CSS Project</a>
-        <a href="landing-pages/profile-page/index.html" target="_blank" class="list-group-item list-group-item-action">My Profile Page - Bootstrap Project</a>
-    </div>
-    <br/>
+    <!-- tab navigations -->
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="true">Projects</a>
+        <a class="nav-item nav-link" id="nav-participants-tab" data-toggle="tab" href="#nav-participants" role="tab" aria-controls="nav-participants" aria-selected="false">Participants</a>
+      </div>
+    </nav>
 
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active disabled">
-            Simple Frontend Web Apps
-        </a>
-        <a href="frontend-web-apps/door-toggle/index.html" target="_blank" class="list-group-item list-group-item-action">Door Toggle - JS DOMs Project</a>
-        <a href="frontend-web-apps/basic-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Basic Calculator - JS Functions Project</a>
-        <a href="frontend-web-apps/grade-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Grade Calculator - JS objects & Arrays Project</a>
-        <a href="frontend-web-apps/khatam-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Khatam Calculator - Mastery Project</a>
-        <a href="frontend-web-apps/zakat-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Zakat Calculator - Mastery Project</a>
-        <a href="frontend-web-apps/charges-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">SG Bill Calculator - Mastery Project</a>
-        <a href="frontend-web-apps/friendship-quiz/index.html" target="_blank" class="list-group-item list-group-item-action">Friendship Quiz - Mastery Project</a>
+    <br />
+
+    <!-- tab contents -->
+
+    <div class="tab-content" id="nav-tabContent">
+      <!-- projects tab -->
+      <div class="tab-pane fade show active" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active disabled">
+                Landing Pages
+            </a>
+            <a href="landing-pages/first-website/index.html" target="_blank" class="list-group-item list-group-item-action">My First Website - HTML Project</a>
+            <a href="landing-pages/styled-website/index.html" target="_blank" class="list-group-item list-group-item-action">My Styled Webstie - CSS Project</a>
+            <a href="landing-pages/profile-page/index.html" target="_blank" class="list-group-item list-group-item-action">My Profile Page - Bootstrap Project</a>
+        </div>
+        <br/>
+    
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active disabled">
+                Simple Frontend Web Apps
+            </a>
+            <a href="frontend-web-apps/door-toggle/index.html" target="_blank" class="list-group-item list-group-item-action">Door Toggle - JS DOMs Project</a>
+            <a href="frontend-web-apps/basic-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Basic Calculator - JS Functions Project</a>
+            <a href="frontend-web-apps/grade-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Grade Calculator - JS objects & Arrays Project</a>
+            <a href="frontend-web-apps/khatam-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Khatam Calculator - Mastery Project</a>
+            <a href="frontend-web-apps/zakat-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">Zakat Calculator - Mastery Project</a>
+            <a href="frontend-web-apps/charges-calculator/index.html" target="_blank" class="list-group-item list-group-item-action">SG Bill Calculator - Mastery Project</a>
+            <a href="frontend-web-apps/friendship-quiz/index.html" target="_blank" class="list-group-item list-group-item-action">Friendship Quiz - Mastery Project</a>
+        </div>
+
+      </div>
+
+      <!-- participants tab -->
+      <div class="tab-pane fade" id="nav-participants" role="tabpanel" aria-labelledby="nav-participants-tab">
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Aljunied #1
+              </a>
+              <a href="https://makcikroastmah.github.io/home-page/" target="_blank" class="list-group-item list-group-item-action">Muhammad Talha Bin Muhamed Hanif</a>
+              <a href="https://mdizzan.github.io/home-page/" target="_blank" class="list-group-item list-group-item-action">Muhammad Izzan Bin Abdul Rahim</a>
+              <a href="https://sinofprideescanor.github.io/Home-Page/" target="_blank" class="list-group-item list-group-item-action">Abdul Hakam Bin Nor Razak</a>
+              <a href="https://pakcikroastmah.github.io/home-page/" target="_blank" class="list-group-item list-group-item-action">Ayman Abdullah Bin Jamaludeen</a>
+          </div>
+
+          <br/>
+
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Aljunied #2
+              </a>
+              <a href="https://makcikroastmah.github.io/projects-list/ /" target="_blank" class="list-group-item list-group-item-action">Siti Nur Fatimah Abdul Rashid</a>
+              <a href="https://mdizzan.github.io/projects-list/ /" target="_blank" class="list-group-item list-group-item-action">Safiyah Binti Niaz</a>
+              <a href="https://sinofprideescanor.github.io/projects-list/ /" target="_blank" class="list-group-item list-group-item-action">Hanie Alia Putri</a>
+              <a href="https://emolock.github.io/projects-list/ /" target="_blank" class="list-group-item list-group-item-action">Ummu Kulthum Binte Eliase</a>
+          </div>
+
+          <br/>
+
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Arabiah #1
+              </a>
+              <a href="https://makcikroastmah.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Ummi Safiyya</a>
+              <a href="https://mdizzan.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Khansa Nauli Tamba</a>
+              <a href="https://elyshaizzah.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Elysha Izzah</a>
+              <a href="https://pakcikroastmah.github.io/projects-list" target="_blank" class="list-group-item list-group-item-action">Shaurah Ashiblie</a>
+          </div>
+
+          <br/>
+
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Arabiah #2
+              </a>
+              <a href="https://cellWall.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Salwa</a>
+              <a href="https://cellWall.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Marium </a>
+              <a href="https://F1724.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Faryal</a>
+          </div>
+
+          <br/>
+
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Wak Tanjong
+              </a>
+              <a href="https://makcikroastmah.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Nurul Izzah</a>
+              <a href="https://mdizzan.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Siti Adilah Binte Selamat </a>
+              <a href="https://sinofprideescanor.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Ammar Bin Ridzuan</a>
+          </div>
+
+          <br/>
+
+          <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active disabled">
+                Madrasah Al-Ma'arif
+              </a>
+              <a href="https://therealleena.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Azma Ameera Leena </a>
+              <a href="https://sofiyyahabeeb.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Sofiyyatul Husna </a>
+              <a href="https://fxthcnx.github.io/projects-list/" target="_blank" class="list-group-item list-group-item-action">Fathona </a>
+          </div>
+
+      </div>
     </div>
+
+    
 
     <br />
     <p class="text-center font-weight-light"> &copy; 2019 Code Hero Projects by Tengku Hafidz & Syafiq Hanafee</p>
